@@ -14,7 +14,7 @@ function MainForm() {
 
   useEffect(() => {
     getListItem();
-  }, []);
+  });
 
   const Categorys = [
     "Body",
