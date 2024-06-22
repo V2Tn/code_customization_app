@@ -68,14 +68,15 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 .form-avatar #avatar {
   border: 1px solid black transparent;
   border-radius: 2rem;
   background: white;
   position: relative;
-  width: 200px;
-  height: 200px;
+  width: 350px;
+  height: 350px;
 }
 #avatar img {
   border: 1px solid black transparent;
@@ -119,6 +120,7 @@
   grid-template-columns: repeat(6, 1fr); /* Mỗi hàng có 6 cột, chia đều */
   gap: 10px; /* Khoảng cách giữa các phần tử */
   padding: 0;
+  color: white;
 }
 .list-category #category-item {
   width: 80%;
@@ -159,15 +161,18 @@
   color: white;
   text-shadow: 1px -1px 5px rgba(255, 255, 255, 100);
 }
+.list-item #form-option {
+  display: grid;
+  grid-template-columns: repeat(6, 1fr); /* Mỗi hàng có 6 cột, chia đều */
+  gap: 10px;
+}
 .list-item #option {
   padding: 10px;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
 }
 .list-item img {
   margin-left: 15px;
   width: 60px;
   height: 60px;
-  border: 1px solid black;
+  border: 1px solid black transparent;
+  box-shadow: 0px 0px 10px rgba(255, 255, 255, 100);
 }

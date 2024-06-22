@@ -106,7 +106,7 @@ function MainForm() {
         z_index = 2;
       } else if (item === "Layer_3") {
         origin = "assets/clothes/layer_3/";
-        size = 5;
+        size = 9;
         z_index = 2;
       } else if (item === "Earring") {
         origin = "assets/earrings/";
@@ -157,7 +157,7 @@ function MainForm() {
   }
 
   return (
-    <div className="container">
+    <div className="root">
       <header className="ctn-header">
         <div className="form-header">
           <div id="title">CHARACTER CUSTOMIZATION</div>
@@ -173,11 +173,12 @@ function MainForm() {
           <div className="form-list">
             <div className="form-section">
               <ShowListCategory
-                category={Categorys}
+                Categorys={Categorys}
                 handleCategoryClick={handleCategoryClick}
                 activeCategory={activeCategory}
               />
               <ShowImgItems
+                activeCategory={activeCategory}
                 showImgs={showImgs}
                 handleItemClick={handleItemClick}
               />
